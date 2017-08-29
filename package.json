@@ -1,0 +1,65 @@
+{
+    "private": true,
+    "name": "cessair",
+    "version": "1.0.1",
+    "description": "An introduction and documentation site for Cessair.",
+    "keywords": [
+        "cessair",
+        "helper",
+        "utility",
+        "catalyst",
+        "extension"
+    ],
+    "homepage": "https://cessair.github.io/",
+    "bugs": {
+        "url": "https://github.com/cessair/cessair.github.io/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Yongbin Min",
+        "email": "contact@cichol.com",
+        "url": "https://www.cichol.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cessair/cessair.github.io.git"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --hot",
+        "build:babel": "babel sources --out-dir libraries/transpiled --source-maps --quiet",
+        "build:scss": "node-sass sources/styles --output libraries/resources --source-map libraries/resources --source-map-contents --quiet",
+        "build:webpack": "webpack"
+    },
+    "dependencies": {
+        "babel-preset-react": "^6.24.1",
+        "cessair": "^1.0.1",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "react-router": "^4.2.0",
+        "react-router-config": "^1.0.0-beta.4",
+        "react-router-dom": "^4.2.2"
+    },
+    "devDependencies": {
+        "babel-eslint": "^7.2.3",
+        "babel-minify-webpack-plugin": "^0.2.0",
+        "babel-preset-minify": "^0.2.0",
+        "chokidar": "^1.7.0",
+        "eslint": "^4.5.0",
+        "eslint-config-airbnb": "^15.1.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-react": "^7.3.0",
+        "execa": "^0.8.0",
+        "fs-jetpack": "^1.2.0",
+        "node-sass": "^4.5.3",
+        "ora": "^1.3.0",
+        "pug": "^2.0.0-rc.3",
+        "source-map-loader": "^0.2.1",
+        "webpack": "^3.5.5",
+        "webpack-dev-server": "^2.7.1",
+        "yargs": "^8.0.2"
+    },
+    "engines": {
+        "node": ">=6.6.0"
+    }
+}

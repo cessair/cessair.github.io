@@ -1,0 +1,22 @@
+{
+    "presets": [
+        "react"
+    ],
+    "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-export-extensions",
+        "transform-async-generator-functions",
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        "transform-do-expressions",
+        "transform-function-bind",
+        "syntax-object-rest-spread",
+        [
+            "transform-runtime",
+            {
+                "polyfill": false,
+                "regenerator": false
+            }
+        ]
+    ]
+}
